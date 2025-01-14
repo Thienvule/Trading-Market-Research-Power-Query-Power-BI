@@ -43,8 +43,63 @@ The Trade Manager reveals that the Weighted Average Price is t
 
 
 
-### Raw Data Dictionary
-Tờ khai: Declaration form number or document reference for customs purposes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Raw Data Dictionary (CONSIDER DELETING)
+1. Tờ khai: Declaration form number or document reference for customs purposes.
 2. Ngày đăng ký: The registration date of the customs declaration.
 3. Tên nơi mở tờ khai: The name of the location where the customs declaration was made.
 4. Mã doanh nghiệp XNK: The export-import enterprise code.
