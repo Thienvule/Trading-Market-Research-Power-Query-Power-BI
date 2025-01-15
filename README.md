@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/2fa57c6e-9b96-446c-bdce-da975ac7c65f)# Trading-Market-Research-Power-Query-Power-BI - Ongoing
+# Trading-Market-Research-Power-Query-Power-BI 
 Trading | Market Research | Power Query &amp; Power BI
 
 ## Overview
@@ -10,7 +10,9 @@ Dragon Eagle (encoded name - DE) is a trading company operating in the feed ingr
 The primary objective for ED is to source the best prices, which serves as the cornerstone of its trading operations. To evaluate the company’s business activities for 2024, ED has tasked me, as the data analyst, with processing raw data acquired from market research. My goal is to generate insights that assess ED's performance in comparison to competitors and identify opportunities for improved sourcing strategies.
 
 ## Power Query - Raw File Processing
-In Power Query, the data cleaning process commenced after loading and combining all 12 files. The raw data contained numerous data type and typographical errors, which I addressed using tools such as formatting (trim, clean) and value replacements for erroneous entries. However, detailing these steps would involve excessive reading, so I will skip to the query logic that creates the necessary columns for the final Power BI dashboards.
+In Power Query, the data cleaning process commenced after loading and combining all 12 files. The raw data contained numerous data type and typographical errors, which I addressed using tools such as formatting (trim, clean) and value replacements for erroneous entries. However, detailing these steps would involve excessive reading, so I will skip to the query logic that creates the necessary columns for the final Power BI dashboards. 
+
+Note: In this github repository, I would not show Power Query code as it would contain sensitive data, yet I would provide the logic to create the needed columns below. 
 
 Let's take a brief look at the raw data given:
 
@@ -188,7 +190,7 @@ As the first dashboard is an interactive dashboard, users can effortlessly explo
 
 ![image](https://github.com/user-attachments/assets/a66e6ba3-8ee9-4db5-aa2f-4816c7ab12cb)
 
-Importer Analysis
+Importer Insights
 - Total Production: ~8,000 TNE (~10% market share).
 - Market Position: Strong foothold in a growing market.
 - Monthly Comparisons: Ranked in the top 10 for both refined and crude oil sectors (PE & ED).
@@ -205,7 +207,7 @@ Importer Analysis
 
   ![image](https://github.com/user-attachments/assets/1353a471-9b39-4970-a6cc-967f4913e977)
 
-  - Overall, our quantities consistently outperformed our competitors throughout the year, particularly in August and September. However, we observed significant underperformance in November, which is puzzling since the average sourced price for that month was lower than the market average.
+  Overall, our quantities consistently outperformed our competitors throughout the year, particularly in August and September. However, we observed significant underperformance in November, which is puzzling since the average sourced price for that month was lower than the market average.
     
   - Crude Oil:
 
@@ -220,13 +222,13 @@ Importer Analysis
 
     The average price for refined oil closely aligns with market trends, yet gaps were evident in May and November.
 
-  Recommendation: Investigate departments related to sales quantities, such as sales and marketing. Additionally, consult the sourcing team for further insights.
+ => Recommendation: Investigate departments related to sales quantities, such as sales and marketing. Additionally, consult the sourcing team for further insights.
     
 - Average Price Trends:
 
   ![image](https://github.com/user-attachments/assets/3bfaf9c5-fa71-496b-99bb-50aa4118baea)
 
-  - Overall, the sourced prices throughout the year consistently surpassed the benchmark weighted average price, indicating strong sourcing strategies and effective partnerships.
+  Overall, the sourced prices throughout the year consistently surpassed the benchmark weighted average price, indicating strong sourcing strategies and effective partnerships.
   - Crude Oil: Prices were consistently lower than market rates throughout 2024, demonstrating effective sourcing. Continued collaboration with current partners is crucial, along with exploring new exporter opportunities.
     
     ![image](https://github.com/user-attachments/assets/74717103-2ee6-40ba-b812-aac367aae794)
