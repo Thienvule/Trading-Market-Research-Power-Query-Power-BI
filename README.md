@@ -1,4 +1,4 @@
-# Trading-Market-Research-Power-Query-Power-BI - Ongoing
+![image](https://github.com/user-attachments/assets/2fa57c6e-9b96-446c-bdce-da975ac7c65f)# Trading-Market-Research-Power-Query-Power-BI - Ongoing
 Trading | Market Research | Power Query &amp; Power BI
 
 ## Overview
@@ -9,7 +9,9 @@ Dragon Eagle (encoded name - DE) is a trading company operating in the feed ingr
 
 The primary objective for ED is to source the best prices, which serves as the cornerstone of its trading operations. To evaluate the company’s business activities for 2024, ED has tasked me, as the data analyst, with processing raw data acquired from market research. My goal is to generate insights that assess ED's performance in comparison to competitors and identify opportunities for improved sourcing strategies.
 
-### Exploring Raw Files
+## Power Query - Raw File Processing
+In Power Query, the data cleaning process commenced after loading and combining all 12 files. The raw data contained numerous data type and typographical errors, which I addressed using tools such as formatting (trim, clean) and value replacements for erroneous entries. However, detailing these steps would involve excessive reading, so I will skip to the query logic that creates the necessary columns for the final Power BI dashboards.
+
 Let's take a brief look at the raw data given:
 
 ![image](https://github.com/user-attachments/assets/fb3983dc-e9a4-4304-ad56-7213edae68ba)
@@ -248,9 +250,11 @@ Exporter Insights
 - Phantom Eagle's Market Size 2024: 13.42%.
 - Monthly Production Comparison: Generally aligns with competitors, but experiences significant gaps mid-year and late-year, producing 1/3 less and 1/2 less respectively during these times despite favorable average prices. Further investigation is needed to understand these low sales periods.
 
-Thunder Jabber:
+##### Thunder Jabber:
 
 ![image](https://github.com/user-attachments/assets/be7c7d57-7909-4d1f-8c4a-1eefedf0a1fc)
+
+![image](https://github.com/user-attachments/assets/d0b0ed9b-a1a6-4e9a-bcfe-c6cc8bc9cacc)
 
 - Position: Leading the market with 14.5K TNE compared to Mekong's 4.7K TNE.
 - Average Price: $1,100, higher than Mekong's $1,023 and showed a steady increase; 
@@ -262,98 +266,114 @@ Thunder Jabber:
 
 
 
-An Dương & Thư Phát:
+##### Golden Eagle & Silver Vortex:
 
-Position: Second in market share with an average of 6.7K TNE, pricing around $1,015, 
-Source: sourced from TNK.
-Average Price: Generally higher than Mekong post-mid-2024, possibly due to higher order volumes and advantageous deals.
-End-of-Year Pricing: We (Mê Kông) may be affected by TVO's stock depletion, leading to reliance on TNK’s higher pricing.
-Region: An Dương (North and a bit South), Thư Phát (South)
-Recommendation: Consider stockpiling from September-October to take advantage of TNK's peak supply and most favorable prices.
+![image](https://github.com/user-attachments/assets/441f45af-c276-47e6-9928-8ef6b715f6c1)
 
+![image](https://github.com/user-attachments/assets/f28da800-f51c-4ee3-9b11-95b5f7463042)
 
-
-CNMT:
-
-Position: Fourth in market share with 2,500 TNE at $1,013, 
-Source: sourcing from TVO.
-Quantity Trend: Mekong generally outsells CNMT, except in October-November when production dips significantly.
-Average Price: Prices with TVO are significantly more favorable than Mekong, possibly due to larger order quantities.
-Region: Bắc
-Recommendation: Explore increasing spend with TVO to lock in favorable deals.
+- Position: Second in market share with an average of 6.7K TNE, pricing around $1,015 
+- Source: sourced from Radiant Bliss.
+- Average Price: Generally higher than Phantom Eagle post-mid-2024, possibly due to higher order volumes and advantageous deals.
+- End-of-Year Pricing: We (PE) may be affected by Verdant Meadow's stock depletion, leading to reliance on RB’s higher pricing.
+- Region: Golden Eagle (North and a bit South), Silver Vortex (South)
+- Recommendation: Consider stockpiling from September-October to take advantage of TNK's peak supply and most favorable prices.
 
 
 
-Other Considerations:
+##### Emerald Archer:
 
-KENDA: Orders placed at GO YEN with potential for self-transport (KENDA as an exporter). Cũng hoạt động trong phân khúc Food, có thể nhập về rồi tự tinh luyện. - South
-Vạn Sanh: Managed to secure good pricing from TNK for limited quantities but lacks further information after the first month. - South
-Dược phẩm Tuệ Linh: Mua dầu thô, hoạt động trong food. Mua giá rất cao nhưng số lượng ít? Tại sao? - North
-Refined Oil Product Insights
+![image](https://github.com/user-attachments/assets/f0edc815-eb0e-470b-97f5-5a0b0fdca5ed)
+
+![image](https://github.com/user-attachments/assets/8aebc3e2-4561-4c51-bb9d-55b065217e4b)
+
+- Position: Fourth in market share with 2,500 TNE at $1,013, 
+- Source: sourcing from Verdant Meadow.
+- Quantity Trend: Mekong generally outsells Emerald Archer, except in October-November when production dips significantly.
+- Average Price: Prices with VM are significantly more favorable than Phantom Eagle, possibly due to larger order quantities.
+- Region: North
+- Recommendation: Explore increasing spend with VM to lock in favorable deals.
+
+
+#### Other Considerations:
+
+- Tempest Lynx: Orders placed at GO YEN with potential for self-transport (Tempest Lynx as an exporter). Also operating in the Food segment, it can import and then refine the products itself.
+- Spirit Lynx: Successfully secured good pricing from TNK for limited quantities but lacks further information after the first month.
+- Iron Panther: Purchases crude oil and operates in the food segment. Acquired at a very high price but in small quantities? Why?
+
+
+#### **Insight 4: Refined Oil Product Insights**
 
 **Ember Dragon Analysis (Food Market)**
 
-Market Size 2024: 7.17%
-Monthly Production Comparison:
-Savo’s production is generally much lower than the market average, only catching up in August, September, and October.
-Average Price: Comparable to or higher than the market, with better sourcing options in November and December.
-Regional Breakdown:
-South: Dominates with 90% market share.
-North: Approximately 9%.
-Central: Minimal presence.
-Segment Focus: Food.
+![image](https://github.com/user-attachments/assets/dd83b17f-9ce7-40d2-b076-818452120776)
+
+- Market Size 2024: 7.17%
+- Monthly Production Comparison:
+- Ember Dragon’s production is generally much lower than the market average, only catching up in August, September, and October.
+- Average Price: Comparable to or higher than the market, with better sourcing options in November and December.
+- Regional Breakdown:
+   - South: Dominates with 90% market share.
+   - North: Approximately 9%.
+   - Central: Minimal presence.
+- Segment Focus: Food.
+
+##### Ice Coyote (IC)
+![image](https://github.com/user-attachments/assets/cf0b2741-5f76-4b84-9fe2-f3cbf29d83fe)
+
+![image](https://github.com/user-attachments/assets/420e2c8a-104c-4ef5-b75a-d491a71e09e9)
+
+- Position: Leading the market with 11K TNE at a slightly higher price point.
+- Sources: RB, VM, Glistening Falls, & Enchanted Forest.
+- Quantity Trend: Ice Coyote consistently imports higher volumes (2-7 times more than ED).
+- Average Price: Although initially priced less favorably than ED, IC started to create a significant gap in production from February 2024. By May 2024, they secured better pricing and maintained high production until October. Even in October, while ED had favorable pricing, IC's volume remained unmatched.
+- Region: South.
+- Segment Focus: Food.
+- Assumption: IC has strong financial backing, allowing them to procure from more expensive sources.
+
+=> Recommendation: Investigate why IC, despite being in the same region and sourcing from similar suppliers, is able to sell a lot more than us?
 
 
-Competitors Analysis
 
-Janbee
+##### Tempest Griffin
 
-Position: Leading the market with 11K TNE at a slightly higher price point.
-Sources: TVO, TNK, Soon Soon, & QR.
-Quantity Trend: Janbee consistently imports higher volumes (2-7 times more than Savo).
-Average Price: Although initially priced less favorably than Savo, Janbee started to create a significant gap in production from February 2024. By May 2024, they secured better pricing and maintained high production until October. Even in October, while Savo had favorable pricing, Janbee's volume remained unmatched.
-Region: South.
-Segment Focus: Food.
-Assumption: Janbee has strong financial backing, allowing them to procure from more expensive sources.
+![image](https://github.com/user-attachments/assets/de1cfbdd-566a-4d93-823b-dc8251b085e8)
 
-Recommendation/Question: Investigate why Janbee, despite being in the same region and sourcing from similar suppliers, is unable to sell more—especially when they maintain competitive pricing.
+![image](https://github.com/user-attachments/assets/b7669280-3ea0-4bdb-ae0c-475c253f8216)
+
+- Position: Second in market share.
+- Sources: Primarily from VM and RB, mainly sourcing from RB.
+- Quantity Trend: Consistently high production levels.
+- Average Price: Prices are consistently about $20 better than Savo, potentially due to bulk deals.
+- Region: South.
+- Segment Focus: Food.
 
 
+##### Dusk Guardian (DG) và Golden Eagle (GE)
 
-Vạn Phát La
+- Position: Ranges from 3-4K TNE priced at $1,100.
+- Sources: VM, RB (GE exclusively), Rustic Bloom.
+- Quantity & Average Price Trend:
+   - DG began sales only in Q4 2024 but surpassed ED's total production by 1,000 TNE, likely due to large initial orders securing better prices than ED. In December, DG accepted higher-priced procurement from Rustic Bloom to meet volume needs.
+   - GE consistently matches or exceeds production levels, primarily active in Q1 and Q3-Q4, often offering better prices than ED.
+- Region: Primarily North and South (mostly North).
+- Segment Focus:
+   - Dầu TV Northern: Food.
+   - An Dương: Feed.
+   
+##### Other consideration
 
-Position: Second in market share.
-Sources: Primarily from TVO and TNK, mainly sourcing from TNK.
-Quantity Trend: Consistently high production levels.
-Average Price: Prices are consistently about $20 better than Savo, potentially due to bulk deals.
-Region: South.
-Segment Focus: Food.
-Dầu TV phía Bắc và An Dương
-
-Position: Ranges from 3-4K TNE priced at $1,100.
-Sources: TVO, TNK (An Dương exclusively), Wilmar.
-Quantity & Average Price Trend:
-Dầu TV (Northern) began sales only in Q4 2024 but surpassed Savo's total production by 1,000 TNE, likely due to large initial orders securing better prices than Savo. In December, Northern Dầu TV accepted higher-priced procurement from Wilmar to meet volume needs.
-An Dương consistently matches or exceeds production levels, primarily active in Q1 and Q3-Q4, often offering better prices than Savo.
-Region: Primarily North and South (mostly North).
-Segment Focus:
-Dầu TV Northern: Food.
-An Dương: Feed.
-Other consideration
-
-Other competing companies have lower production levels but higher prices than Savo, indicating potential operational inefficiencies or supply issues.
-If we wish to analyze the best deals for the specified month, we can assess whether we secured the optimal price at that time.
+- Other competing companies have lower production levels but higher prices than ED, indicating potential operational inefficiencies or supply issues.
+- If we wish to analyze the best deals for the specified month, we can assess whether we secured the optimal price at that time.
 
 
 Recommendations Summary
 
-Engage with New Partners: Seek collaborations with VMI and TRADEASIA for competitive pricing and enhanced production.
-Increase Stock during Favorable Pricing: Plan to stockpile refined oil from TNK during September-October to benefit from times of lower pricing.
-Investigate Market Dynamics: Conduct a deeper analysis into competitors like Janbee to understand pricing and sales volume discrepancies.
-Strengthen Relationships with Current Suppliers: Continue partnerships with TVO and TNK to maintain competitive pricing and reliable sourcing.
-Optimize Sourcing Strategies: Focus on strategic sourcing to ensure efficient procurement at lower costs, enhancing competitive positioning.
-
-
+- **Engage with New Partners:** Seek collaborations with Glistening Marsh and Feathered Sky for competitive pricing and enhanced production.
+- **Increase Stock during Favorable Pricing:** Plan to stockpile refined oil from Radiant Bliss during September-October to benefit from times of lower pricing.
+- **Investigate Market Dynamics:** Conduct a deeper analysis into competitors like Ice Coyote to understand pricing and sales volume discrepancies.
+- **Strengthen Relationships with Current Suppliers:** Continue partnerships with Verdant Meadow and Radiant Bliss to maintain competitive pricing and reliable sourcing.
+- **Optimize Sourcing Strategies:** Focus on strategic sourcing to ensure efficient procurement at lower costs, enhancing competitive positioning.
 
 
 
